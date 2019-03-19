@@ -1,11 +1,14 @@
 package com.todo.Todo.list.Model;
 
+import javax.validation.constraints.NotBlank;
 import java.util.UUID;
 
 public class Todo {
 
     private final UUID id;
+    @NotBlank
     private final String title;
+    @NotBlank
     private final String body;
     private final boolean isActive;
 
